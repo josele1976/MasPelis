@@ -10,6 +10,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Crear  2 fragmentos
+        //Cargo el fragmento de la lista de películas
+        loadFragment(new ListaPeliculas());
+    }
+
+    private void loadFragment(ListaPeliculas listaPeliculas) {
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(android.R.id.content, listaPeliculas)
+                .addToBackStack(null)
+                .commit();
     }
 }
