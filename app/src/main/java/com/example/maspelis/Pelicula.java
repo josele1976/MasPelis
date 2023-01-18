@@ -11,10 +11,12 @@ public class Pelicula {
     }
 
     public void setImagenPelicula(String imagenPelicula) {
+
         this.imagenPelicula = imagenPelicula;
     }
 
     public String getNombrePelicula() {
+
         return nombrePelicula;
     }
 
@@ -23,6 +25,7 @@ public class Pelicula {
     }
 
     public String getUrlPelicula() {
+
         return urlPelicula;
     }
 
